@@ -1,0 +1,11 @@
+language: android
+android:
+  components:
+    - platform-tools
+    - tools
+    - build-tools-28.0.3
+    - android-28
+
+script:
+    - echo "Travis branch is $TRAVIS_BRANCH"
+    - ls -d ./*/ | xargs -I {} bash -c "echo {};cd {} && chmod +x ./gradlew && ./gradlew assembleDebug"

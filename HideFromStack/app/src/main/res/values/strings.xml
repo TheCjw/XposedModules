@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">HideFromStack</string>
+  <string name="xposed_description">This is a XposedModule.</string>
+</resources>
